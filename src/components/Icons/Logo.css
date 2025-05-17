@@ -1,0 +1,16 @@
+/* components/Icons/Logo.css */
+.logo-container {
+  height: 40px;
+}
+.logo-emblem {
+  fill: var(--red-500);
+}
+
+.logo-text {
+  fill: var(--neutral-900); /* Default (light mode) text color */
+}
+
+/* In dark mode, change the text color */
+.dark-theme .logo-text {
+  fill: var(--neutral-100);
+}

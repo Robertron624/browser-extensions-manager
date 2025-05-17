@@ -1,0 +1,10 @@
+.app-header {
+    gap: .5rem;
+    background-color: var(--neutral-0);
+    padding: .5rem .6rem;
+    border-radius: 10px;
+}
+
+.dark-theme .app-header {
+    background-color: var(--neutral-700);
+}

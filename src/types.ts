@@ -6,3 +6,12 @@ export type ThemeContextType = {
 export type ThemeProviderProps = {
   children: React.ReactNode;
 };
+// components/Icons/IconProps.ts
+export interface IconProps {
+  className?: string;
+  width?: number | string;
+  height?: number | string;
+  color?: string;
+  onClick?: () => void;
+  title?: string;
+}

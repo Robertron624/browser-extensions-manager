@@ -213,17 +213,48 @@ h3 {
   /* Add more theme-specific variables as needed */
 }
 
-/* Apply these variables to your elements */
 body {
   margin: 0;
   padding: 0;
   font-family: var(--font-family);
   font-size: var(--font-size);
   line-height: var(--line-height);
-  background: var(--background);
   color: var(--text-color);
-  background-repeat: no-repeat;
   min-height: 100vh;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Base background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--light-gradient);
+  z-index: -2;
+  transition: opacity 0.3s ease;
+}
+
+/* Dark theme overlay */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--dark-gradient);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show dark gradient when dark theme is active */
+.dark-theme body::after {
+  opacity: 1;
 }
 
 /* Theme switcher button styles */
