@@ -7,7 +7,6 @@ export const Logo: React.FC<IconProps> = ({
   width = 179, 
   height = 41, 
   className = '',
-  onClick,
   title = 'Extensions Logo'
 }) => {
   return (
@@ -18,7 +17,6 @@ export const Logo: React.FC<IconProps> = ({
       viewBox="0 0 179 41" 
       fill="none"
       className={`logo-svg ${className}`} // Add logo-svg class
-      onClick={onClick}
       aria-labelledby="logoTitle"
       role="img"
     >

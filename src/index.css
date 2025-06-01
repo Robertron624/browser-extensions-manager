@@ -208,7 +208,7 @@ h3 {
 /* Dark theme */
 .dark-theme {
   --background: var(--dark-gradient);
-  --text-color: var(--neutral-100);
+  --text-color: var(--neutral-0);
   --border-color: var(--neutral-700);
   /* Add more theme-specific variables as needed */
 }
