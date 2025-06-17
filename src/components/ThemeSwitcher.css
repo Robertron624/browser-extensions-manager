@@ -1,0 +1,7 @@
+.theme-switcher {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--neutral-600);
+    border: none;
+    cursor: pointer;
+}

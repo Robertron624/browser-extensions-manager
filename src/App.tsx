@@ -8,8 +8,9 @@ function App() {
     <div className="app">
       <Header/>      
       <main>
-        <h2>Welcome to your browser extension</h2>
-        <p>This content will respond to your theme settings!</p>
+        <h1>
+          Extensions List
+        </h1>
       </main>
     </div>
   );

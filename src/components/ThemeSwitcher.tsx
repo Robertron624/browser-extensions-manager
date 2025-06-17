@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "../hooks/useTheme";
 import { Sun, Moon } from "./Icons";
-
+import './ThemeSwitcher.css'
 
 const ThemeSwitcher: React.FC = () => {
     const { isDarkMode, toggleTheme } = useTheme();
