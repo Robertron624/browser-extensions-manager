@@ -14,3 +14,21 @@ export interface IconProps {
   color?: string;
   title?: string;
 }
+
+export type FilterState = 'all' | 'active' | 'inactive';
+
+export interface Extension {
+  id: string;
+  name: string;
+  description: string;
+  logo: string;
+  isActive: boolean;
+}
+
+export interface FilterContextType {
+  activeFilter: FilterState;
+  setActiveFilter: (filter: FilterState) => void;
+  filteredExtensions: Extension[];
+  extensions: Extension[];
+  setExtensions: (extensions: Extension[]) => void;
+}

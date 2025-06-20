@@ -6,19 +6,19 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/public/fonts/NotoSans-Regular.ttf') format('truetype');
+  src: url('/fonts/NotoSans-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  src: url('/public/fonts/NotoSans-Medium.ttf') format('truetype');
+  src: url('/fonts/NotoSans-Medium.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
-  src: url('/public/fonts/NotoSans-Bold.ttf') format('truetype');
+  src: url('/fonts/NotoSans-Bold.ttf') format('truetype');
 }
 
 :root {
@@ -203,6 +203,14 @@ h3 {
   --text-color: var(--neutral-900);
   --border-color: var(--neutral-200);
   /* Add more theme-specific variables as needed */
+
+  /* General-purpose variables */
+  --button-bg: transparent;
+  --button-bg-hover: var(--neutral-100);
+  --button-border: var(--neutral-200);
+  --button-text: var(--neutral-900);
+  --button-active-bg: var(--red-700);
+  --button-active-text: var(--neutral-0);
 }
 
 /* Dark theme */
@@ -211,6 +219,14 @@ h3 {
   --text-color: var(--neutral-0);
   --border-color: var(--neutral-700);
   /* Add more theme-specific variables as needed */
+
+    /* Dark theme button variables */
+  --button-bg: var(--neutral-700);
+  --button-bg-hover: var(--neutral-800);
+  --button-border: var(--neutral-300);
+  --button-text: var(--neutral-0);
+  --button-active-bg: var(--red-500);
+  --button-active-text: var(--neutral-900);
 }
 
 body {

@@ -1,5 +1,6 @@
 
 import './App.css'
+import FilterButtons from './components/FilterButtons';
 import Header from './components/Header'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <h1>
           Extensions List
         </h1>
+        <FilterButtons />
       </main>
     </div>
   );
