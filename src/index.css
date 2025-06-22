@@ -205,12 +205,15 @@ h3 {
   /* Add more theme-specific variables as needed */
 
   /* General-purpose variables */
-  --button-bg: transparent;
+  --button-bg: var(--neutral-0);
   --button-bg-hover: var(--neutral-100);
   --button-border: var(--neutral-200);
   --button-text: var(--neutral-900);
   --button-active-bg: var(--red-700);
   --button-active-text: var(--neutral-0);
+
+  --switcher-bg: var(--neutral-200);
+  --switcher-bg-hover: var(--neutral-600);
 }
 
 /* Dark theme */
@@ -227,6 +230,10 @@ h3 {
   --button-text: var(--neutral-0);
   --button-active-bg: var(--red-500);
   --button-active-text: var(--neutral-900);
+
+  --switcher-bg: var(--neutral-700);
+  --switcher-bg-hover: var(--neutral-300);
+  --switcher-text: var(--neutral-0);
 }
 
 body {
@@ -271,26 +278,4 @@ body::after {
 /* Show dark gradient when dark theme is active */
 .dark-theme body::after {
   opacity: 1;
-}
-
-/* Theme switcher button styles */
-.theme-switcher {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-color);
-  transition: background-color 0.3s ease;
-}
-
-.theme-switcher:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.dark-theme .theme-switcher:hover {
-  background-color: rgba(255, 255, 255, 0.1);
 }

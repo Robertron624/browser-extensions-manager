@@ -1,7 +1,8 @@
 .theme-switcher {
     padding: 10px;
     border-radius: 10px;
-    background-color: var(--neutral-600);
+    background-color: var(--switcher-bg);
+    color: var(--switch-text);
     border: none;
     cursor: pointer;
 }
