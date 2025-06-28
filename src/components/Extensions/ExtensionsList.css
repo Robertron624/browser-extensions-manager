@@ -1,0 +1,68 @@
+.extensions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.extensions-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--neutral-200);
+  border-top: 4px solid var(--red-500);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.dark-theme .loading-spinner {
+  border: 4px solid var(--neutral-700);
+  border-top: 4px solid var(--red-500);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.extensions-error {
+  text-align: center;
+  padding: 2rem;
+  color: var(--red-500);
+}
+
+.extensions-error button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--red-500);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.no-extensions {
+  text-align: center;
+  padding: 3rem;
+  color: var(--neutral-600);
+}
+
+.dark-theme .no-extensions {
+  color: var(--neutral-300);
+}
+
+@media (max-width: 768px) {
+  .extensions-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

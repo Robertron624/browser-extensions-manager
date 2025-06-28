@@ -2,6 +2,7 @@
 import './App.css'
 import FilterButtons from './components/FilterButtons';
 import Header from './components/Header'
+import ExtensionsList from './components/Extensions/ExtensionsList';
 
 function App() {
 
@@ -12,7 +13,12 @@ function App() {
         <h1>
           Extensions List
         </h1>
-        <FilterButtons />
+        <div className="filters-section">
+          <FilterButtons />
+        </div>
+        <div className="extensions-section">
+          <ExtensionsList />
+        </div>
       </main>
     </div>
   );

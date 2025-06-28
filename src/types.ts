@@ -31,4 +31,8 @@ export interface FilterContextType {
   filteredExtensions: Extension[];
   extensions: Extension[];
   setExtensions: (extensions: Extension[]) => void;
+  toggleExtensionStatus: (id: string) => void;
+  removeExtension: (id: string) => void;
+  loading: boolean;
+  error: string | null;
 }
