@@ -69,16 +69,17 @@
   padding: 0.5rem 1rem;
   border-radius: 20px;
   color: var(--neutral-600);
-  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   font-size: 0.875rem;
+  font-weight: 500;
   justify-content: center;
+  transition: var(--custom-transition-2);
 }
 
 .remove-button:hover {
-  background: var(--red-100);
-  color: var(--red-700);
+  background: var(--red-700);
+  color: var(--neutral-0);
   border-color: var(--red-300);
 }
 
@@ -87,8 +88,9 @@
 }
 
 .dark-theme .remove-button:hover {
-  background: var(--red-900);
-  color: var(--red-400);
+  background: var(--red-400);
+  color: var(--neutral-900);
+  border-color: var(--red-400);
 }
 
 .extension-description {
@@ -154,6 +156,11 @@
 
 input:checked + .slider {
   background-color: var(--red-700);
+  transition: var(--custom-transition-2);
+}
+
+input:checked + .slider:hover {
+  background-color: var(--red-500);
 }
 
 input:checked + .slider:before {
@@ -170,4 +177,8 @@ input:checked + .slider:before {
 
 .dark-theme input:checked + .slider {
   background-color: var(--red-400);
+}
+
+.dark-theme input:checked + .slider:hover {
+  background-color: var(--red-500);
 }

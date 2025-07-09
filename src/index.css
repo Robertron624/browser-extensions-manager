@@ -46,6 +46,11 @@
   --desktop-media-low: 1024px;
   --desktop-media-high: 1440px;
   --desktop-media-higher: 1920px;
+
+  --custom-transition-1: all 0.3s ease;
+  --custom-transition-2: all 0.3s ease-in-out;
+  --custom-transition-3: all 0.4s ease;
+  --custom-transition-4: all 0.4s ease-in-out;
 }
 
 /* CSS Reset */
@@ -241,7 +246,7 @@ h3 {
   --button-active-text: var(--neutral-0);
 
   --switcher-bg: var(--neutral-100);
-  --switcher-bg-hover: var(--neutral-600);
+  --switcher-bg-hover: var(--neutral-300);
 }
 
 /* Dark theme */
@@ -260,7 +265,7 @@ h3 {
   --button-active-text: var(--neutral-900);
 
   --switcher-bg: var(--neutral-700);
-  --switcher-bg-hover: var(--neutral-300);
+  --switcher-bg-hover: var(--neutral-600);
   --switcher-text: var(--neutral-0);
 }
 

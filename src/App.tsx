@@ -10,11 +10,13 @@ function App() {
     <div className="app">
       <Header/>      
       <main>
-        <h1>
-          Extensions List
-        </h1>
-        <div className="filters-section">
-          <FilterButtons />
+        <div className="title-and-filters flex justify-between items-center">
+          <h1>
+            Extensions List
+          </h1>
+          <div className="filters-section">
+            <FilterButtons />
+          </div>
         </div>
         <div className="extensions-section">
           <ExtensionsList />

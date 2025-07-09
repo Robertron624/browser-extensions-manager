@@ -5,4 +5,9 @@
     color: var(--switch-text);
     border: none;
     cursor: pointer;
+    transition: var(--custom-transition-2);
+}
+
+.theme-switcher:hover {
+    background-color: var(--switcher-bg-hover);
 }

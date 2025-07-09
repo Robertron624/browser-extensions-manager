@@ -6,13 +6,39 @@
 }
 
 main {
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 main h1 {
   font-size: 2rem;
 }
 
+.filters-section {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
 .extensions-section {
   margin-top: 2rem;
+}
+
+/* Media Queries*/
+
+@media (min-width: 768px) {
+  main{
+    padding-top: 4rem;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  .filters-section {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .extensions-section {
+    margin-top: 1rem;
+  }
 }
