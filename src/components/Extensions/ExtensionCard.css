@@ -83,6 +83,15 @@
   border-color: var(--red-300);
 }
 
+.remove-button:focus-visible {
+  outline-width: 2px;
+  outline-color: var(--red-400);
+  outline-style: solid;
+  outline-offset: 2px;
+  border: none;
+  background-color: var(--neutral-100);
+}
+
 .dark-theme .remove-button {
   color: var(--neutral-300);
 }
@@ -91,6 +100,10 @@
   background: var(--red-400);
   color: var(--neutral-900);
   border-color: var(--red-400);
+}
+
+.dark-theme .remove-button:focus-visible {
+  background-color: var(--neutral-600);
 }
 
 .extension-description {
@@ -128,6 +141,11 @@
   opacity: 0;
   width: 0;
   height: 0;
+}
+
+.toggle-switch input:focus-visible + .slider {
+  outline: 2px solid var(--red-400);
+  outline-offset: 2px;
 }
 
 .slider {

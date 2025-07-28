@@ -12,6 +12,7 @@
   transition: var(--custom-transition-2);
   font-size: 0.875rem;
   font-weight: 500;
+  --outline-separation: 2px;
 }
 
 .light-theme .filter-button {
@@ -30,9 +31,20 @@
   background-color: var(--light-gradient);
 }
 
+.filter-button:focus-visible {
+  outline-width: 2px;
+  outline-color: var(--red-400);
+  outline-style: solid;
+  outline-offset: var(--outline-separation);
+}
+
 .dark-theme .filter-button:hover {
   background-color: var(--neutral-600);
   color: var(--neutral-0);
+}
+
+.dark-theme .filter-button:focus-visible {
+  background-color: var(--neutral-600);
 }
 
 .filter-button.active {
@@ -43,6 +55,13 @@
 .filter-button.active:hover {
   background-color: var(--red-400);
   color: var(--neutral-0);
+}
+
+.filter-button.active:focus-visible {
+  outline-width: 2px;
+  outline-color: var(--red-400);
+  outline-style: solid;
+  outline-offset: var(--outline-separation);
 }
 
 .dark-theme .filter-button.active {

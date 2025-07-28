@@ -1,13 +1,40 @@
 .theme-switcher {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: var(--switcher-bg);
-    color: var(--switch-text);
-    border: none;
-    cursor: pointer;
-    transition: var(--custom-transition-2);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: var(--custom-transition-2);
+  --outline-separation: 2px;
 }
 
-.theme-switcher:hover {
-    background-color: var(--switcher-bg-hover);
+.light-theme .theme-switcher {
+  background-color: var(--neutral-100);
+}
+
+.dark-theme .theme-switcher {
+  color: var(--neutral-0);
+  background-color: var(--neutral-700);
+}
+
+.light-theme .theme-switcher:hover {
+  background-color: var(--neutral-300);
+}
+
+.dark-theme .theme-switcher:hover {
+  background-color: var(--neutral-600);
+  color: var(--neutral-0);
+}
+
+.theme-switcher:focus-visible {
+    outline-offset: var(--outline-separation);
+}
+
+.light-theme .theme-switcher:focus-visible {
+  outline: 2px solid var(--red-400);
+  background-color: var(--neutral-100);
+}
+
+.dark-theme .theme-switcher:focus-visible {
+  outline: 2px solid var(--red-400);
+  background-color: var(--neutral-600);
 }
