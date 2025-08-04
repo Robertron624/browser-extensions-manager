@@ -8,4 +8,8 @@ export const FilterContext = createContext<FilterContextType>({
   filteredExtensions: [],
   extensions: [],
   setExtensions: () => {},
+  toggleExtensionStatus: () => {},
+  removeExtension: () => {},
+  loading: false,
+  error: null,
 });
