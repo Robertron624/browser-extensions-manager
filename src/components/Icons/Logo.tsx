@@ -7,7 +7,6 @@ export const Logo: React.FC<IconProps> = ({
   width = 179, 
   height = 41, 
   className = '',
-  title = 'Extensions Logo'
 }) => {
   return (
     <svg 
@@ -20,7 +19,6 @@ export const Logo: React.FC<IconProps> = ({
       aria-labelledby="logoTitle"
       role="img"
     >
-      <title id="logoTitle">{title}</title>
       <g clipPath="url(#a)">
         <path 
           className="logo-emblem" // Add this class

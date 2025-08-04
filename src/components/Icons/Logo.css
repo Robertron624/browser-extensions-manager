@@ -2,6 +2,12 @@
 .logo-container {
   height: 40px;
 }
+
+.logo-container:focus-visible {
+  outline: 2px solid var(--red-400);
+  outline-offset: 2px;
+}
+
 .logo-emblem {
   fill: var(--red-500);
 }
